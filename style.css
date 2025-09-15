@@ -1,0 +1,92 @@
+:root {
+  --bg: #070707;
+  --accent: #00ff99;
+  --muted: rgba(255, 255, 255, 0.08);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, "Menlo", Monaco, "Roboto Mono", "Courier New", monospace;
+  background: linear-gradient(180deg, #000 0%, #050505 60%);
+  color: var(--accent);
+}
+
+.wrap {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 880px;
+  max-width: 96%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+  padding: 28px;
+  border: 1px solid rgba(0,255,153,0.06);
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+}
+
+.screen {
+  background: repeating-linear-gradient(180deg, rgba(255,255,255,0.01) 0 1px, transparent 1px 3px);
+  padding: 40px;
+  border-radius: 8px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.scramble {
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: rgba(0,255,153,0.6);
+  font-size: 13px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid rgba(0,255,153,0.12);
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  border-color: rgba(0,255,153,0.25);
+  transform: translateY(-1px);
+}
+
+.muted {
+  color: rgba(255,255,255,0.28);
+  font-size: 13px;
+}
+
+@media (max-width: 520px) {
+  .scramble {
+    font-size: 28px;
+  }
+}
